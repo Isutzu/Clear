@@ -1,5 +1,5 @@
 ## Clear.java
-----
+
 
  **usage: java Optimus[source folder] [target folder]**
 
