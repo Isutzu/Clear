@@ -71,9 +71,11 @@ public class Optimus {
       System.out.println("usage: java Optimus [source directory][target directory] ");
       System.exit(0);
     }
-    String pathNeedle = "/Users/Oscar/vagrant/scotch-box/public/bella/public/img/";
 
-    String targetPath = "/Users/Oscar/vagrant/scotch-box/public/bella/app/views/inc/";
+     String pathNeedle = args[0];
+     String targetPath = args[1];
+    
+
 
     targetFiles = getFiles(targetPath);
     sourceFiles = getFiles(pathNeedle);
