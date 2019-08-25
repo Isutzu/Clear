@@ -36,7 +36,7 @@ I used it to delete all images and icons not used in my website project. I could
 
 *usage: java Optimus [source folder]  [target folder]*
 
-All images not being used by the scripts in the views folder will be deleted.
+All images in the `img` folder not being used by the scripts in the `views` folder will be deleted.
 
 `$ java Optimus /Users/Oscar/public/img/  /Users/Oscar/app/views/`
 
