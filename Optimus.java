@@ -9,7 +9,7 @@ public class Optimus {
 
   /************************** search() ************************/
   public static void search(String target) {
-     
+
     for (String fname : sourceFiles) {
 
       try {
@@ -26,14 +26,14 @@ public class Optimus {
             break;
           }
         }
-       
+
       } catch (FileNotFoundException e) {
 
       }
     }
-  
 
   }
+
   /************************* getFiles() ************************/
   public static List<String> getFiles(String path) {
 
@@ -51,8 +51,7 @@ public class Optimus {
     return result;
   }
 
-
- /************************* printResult() ************************/
+  /************************* printResult() ************************/
   public static void printResult(List<String> result) {
 
     for (String s : result) {
@@ -60,37 +59,32 @@ public class Optimus {
     }
   }
 
-
-  /************************* main() ************************/ 
+  /************************* main() ************************/
   public static void main(String[] args) {
-    if(args == null || args.length < 1 ){
+    if (args == null || args.length < 1) {
       System.out.println("usage: java Optimus [source directory][target directory] ");
       System.exit(0);
     }
 
-     String pathNeedle = args[0];
-     String targetPath = args[1];
-    
-
+    String pathNeedle = args[0];
+    String targetPath = args[1];
 
     targetFiles = getFiles(targetPath);
     sourceFiles = getFiles(pathNeedle);
 
-    for( String target : targetFiles){
-        search(targetPath + target);
+    for (String target : targetFiles) {
+      search(targetPath + target);
     }
-    
+
     System.out.println("No used files:" + sourceFiles.size());
     System.out.println("-------------------");
 
     printResult(sourceFiles);
 
-   /* for(String fname: sourceFiles){
-      File file = new File(pathNeedle + "/" + fname);
-      file.delete();
-  }
-*/
-
+    /*
+     * for(String fname: sourceFiles){ File file = new File(pathNeedle + "/" +
+     * fname); file.delete(); }
+     */
 
   }
 
