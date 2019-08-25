@@ -1,8 +1,4 @@
-## Clear.java
-
-
- **usage: java Optimus[source folder] [target folder]**
-
+ 
 ## Description
 
 Search and delete all assets(images, icons, etc)not being used in your project folder.
@@ -13,7 +9,7 @@ _Basically it is just a string search . It coud be accomplished with a shell scr
 
 I used it to delete all images and icons not used in my website project. I couldn't find an extension in my VScode editor to eliminate all unused reources. Similar to the optimization ProGuard does on Android.
 
-
+**usage: java Optimus[source folder] [target folder]**
 
 
 ### TODO
