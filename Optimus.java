@@ -9,11 +9,7 @@ public class Optimus {
 
   /************************** search() ************************/
   public static void search(String target) {
-    System.out.println("-------------------------------------");
-    System.out.println("NUMBER OF FILES :" + sourceFiles.size());
-    System.out.println("-------------------------------------");
      
-  
     for (String fname : sourceFiles) {
 
       try {
