@@ -7,7 +7,7 @@ public class Optimus {
   public static List<String> targetFiles;
   public static List<String> sourceFiles;
 
-  /************************* search() ************************/
+  /************************** search() ************************/
   public static void search(String target) {
     System.out.println("-------------------------------------");
     System.out.println("NUMBER OF FILES :" + sourceFiles.size());
