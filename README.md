@@ -11,6 +11,38 @@ I used it to delete all images and icons not used in my website project. I could
 
 **usage: java Optimus[source folder] [target folder]**
 
+### Example
+
+```
+  /app
+    /css
+      styles.css
+    /js
+      scripts.js  
+    /img
+      uno.png
+      dos.png
+      tres.png
+      favicon.ico
+
+  /public
+      /views 
+          foother.php
+          header.php
+          navbar.php
+          slider.php
+          contact.php
+```             
+
+*usage: java Optimus [source folder]  [target folder]*
+
+All images not being used by the scripts in the views folder will be deleted.
+
+`$ java Optimus /Users/Oscar/public/img/  /Users/Oscar/app/views/`
+
+
+
+
 
 ### TODO
 - [ ] Input validation
